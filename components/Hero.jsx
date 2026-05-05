@@ -284,7 +284,7 @@ export function Hero() {
             variants={item}
             className="text-base sm:text-lg font-medium text-zinc-500 dark:text-zinc-400 mb-4 tracking-wide"
           >
-            Software Developer &nbsp;·&nbsp; AI Builder
+            Software Developer &nbsp;·&nbsp; AI Enthusiast &nbsp;·&nbsp; Product Manager
           </motion.p>
 
           <motion.p
