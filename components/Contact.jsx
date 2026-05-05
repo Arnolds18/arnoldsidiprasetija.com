@@ -22,8 +22,8 @@ const links = [
   {
     icon: Github,
     label: 'GitHub',
-    value: 'github.com/arnoldprasetija',
-    href: 'https://github.com/arnoldprasetija',
+    value: 'github.com',
+    href: 'https://github.com/Arnolds1809',
     description: "See what I'm building",
   },
   {

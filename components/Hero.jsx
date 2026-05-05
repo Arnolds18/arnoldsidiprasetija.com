@@ -316,7 +316,7 @@ export function Hero() {
             className="flex items-center justify-center gap-4 mt-8"
           >
             <a
-              href="https://github.com/arnoldprasetija"
+              href="https://github.com/Arnolds1809"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 flex items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-800 text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-150"
