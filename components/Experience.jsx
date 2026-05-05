@@ -4,7 +4,7 @@ const experiences = [
   {
     year: '2025 – Present',
     role: 'QA Engineer',
-    company: 'Growise Inc',
+    company: 'Growise.io',
     companyUrl: 'https://growise.io/',
     current: true,
     description:

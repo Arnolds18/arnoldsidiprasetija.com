@@ -52,6 +52,10 @@
   ::-webkit-scrollbar-thumb {
     @apply bg-zinc-300 dark:bg-zinc-700 rounded-full;
   }
+
+  @media (hover: hover) and (pointer: fine) {
+    * { cursor: none !important; }
+  }
 }
 
 @layer utilities {

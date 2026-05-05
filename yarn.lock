@@ -101,6 +101,18 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@lottiefiles/dotlottie-react@^0.19.1":
+  version "0.19.1"
+  resolved "https://registry.npmjs.org/@lottiefiles/dotlottie-react/-/dotlottie-react-0.19.1.tgz"
+  integrity sha512-D1d/g13qrs77Y/4JrbWSdcDTfyiYOK7NriYiTW7I0rHZyIChji0mNrPOA1D5VPcnwjioWyijTS1AXIut0FyETQ==
+  dependencies:
+    "@lottiefiles/dotlottie-web" "0.72.0"
+
+"@lottiefiles/dotlottie-web@0.72.0":
+  version "0.72.0"
+  resolved "https://registry.npmjs.org/@lottiefiles/dotlottie-web/-/dotlottie-web-0.72.0.tgz"
+  integrity sha512-CllhCIWWcCrUN71RCwyj9vbSQGE8H465m2Efudizfe5CIitQly7TO7DS2f6juBr5VZVy/r5AqQPUcbvz2uoxtQ==
+
 "@next/env@14.2.35":
   version "14.2.35"
   resolved "https://registry.npmjs.org/@next/env/-/env-14.2.35.tgz"
@@ -2258,7 +2270,7 @@ react-is@^16.13.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-"react@^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^16.8 || ^17 || ^18", "react@^18 || ^19 || ^19.0.0-rc", "react@^18.0.0 || ^19.0.0", react@^18.2.0, react@^18.3.0, react@^18.3.1, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0":
+"react@^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^16.8 || ^17 || ^18", "react@^17 || ^18 || ^19", "react@^18 || ^19 || ^19.0.0-rc", "react@^18.0.0 || ^19.0.0", react@^18.2.0, react@^18.3.0, react@^18.3.1, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0":
   version "18.3.1"
   resolved "https://registry.npmjs.org/react/-/react-18.3.1.tgz"
   integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==

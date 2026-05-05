@@ -3,6 +3,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Providers } from '@/components/providers'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
+import { CustomCursor } from '@/components/CustomCursor'
 import './globals.css'
 
 const inter = Inter({
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning className={inter.variable}>
       <body className="min-h-screen bg-white dark:bg-zinc-950 antialiased">
         <Providers>
+          <CustomCursor />
           <Navbar />
           <main>{children}</main>
           <Footer />
