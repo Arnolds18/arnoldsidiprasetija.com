@@ -245,6 +245,7 @@ export function Hero() {
       {/* Glow orbs */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-indigo-500/10 dark:bg-indigo-500/8 blur-3xl rounded-full pointer-events-none" />
       <div className="absolute top-[25%] left-[2%] w-[260px] h-[260px] bg-indigo-500/10 dark:bg-indigo-500/15 blur-[80px] rounded-full pointer-events-none" />
+      <div className="absolute top-[25%] right-[2%] w-[260px] h-[260px] bg-indigo-500/10 dark:bg-indigo-500/15 blur-[80px] rounded-full pointer-events-none" />
       <div className="absolute bottom-[20%] right-[2%] w-[280px] h-[280px] bg-amber-500/8 dark:bg-amber-500/12 blur-[80px] rounded-full pointer-events-none" />
 
       {/* ── Left panel (absolute, no flow impact) ── */}
