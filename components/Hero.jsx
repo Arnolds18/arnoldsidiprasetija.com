@@ -103,7 +103,7 @@ function PianoPanel() {
   const wPct = 100 / WHITE_KEY_COUNT
 
   return (
-    <div className="bg-zinc-950/90 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden w-full">
+    <div className="bg-zinc-950/90 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden w-full max-w-[260px]">
       <div className="flex items-center gap-2 px-3.5 py-2.5 border-b border-white/[0.07] bg-zinc-900/60">
         <Music size={11} className="text-amber-400" />
         <span className="text-[10px] text-zinc-500 font-mono">melody.wav</span>
@@ -172,7 +172,7 @@ function LeftPanel() {
       initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.1, delay: 0.4, ease: 'easeOut' }}
-      className="w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[420px] lg:-translate-y-28"
+      className="w-[160px] sm:w-[220px] md:w-[280px] lg:w-[380px]"
     >
       <motion.div
         animate={{ y: [0, -12, 0] }}
@@ -203,7 +203,7 @@ function RightPanel() {
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.1, delay: 0.6, ease: 'easeOut' }}
-      className="w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[420px] lg:translate-y-28"
+      className="w-[160px] sm:w-[220px] md:w-[280px] lg:w-[380px]"
     >
       <motion.div
         animate={{ y: [0, 12, 0] }}
@@ -237,7 +237,7 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 overflow-hidden py-20">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden">
       {/* Background grid */}
       <div className="absolute inset-0 hidden dark:block grid-bg pointer-events-none" />
       <div className="absolute inset-0 block dark:hidden grid-bg-light pointer-events-none" />
@@ -247,20 +247,22 @@ export function Hero() {
       <div className="absolute top-[25%] left-[2%] w-[260px] h-[260px] bg-indigo-500/10 dark:bg-indigo-500/15 blur-[80px] rounded-full pointer-events-none" />
       <div className="absolute bottom-[20%] right-[2%] w-[280px] h-[280px] bg-amber-500/8 dark:bg-amber-500/12 blur-[80px] rounded-full pointer-events-none" />
 
-      {/* ── Three-column layout ── */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-6">
+      {/* ── Left panel (absolute, no flow impact) ── */}
+      <div className="absolute left-2 sm:left-6 lg:left-10 top-[18%] sm:top-[22%] opacity-60 sm:opacity-70 hover:opacity-100 transition-opacity duration-300">
+        <LeftPanel />
+      </div>
 
-        {/* Left panel */}
-        <div className="order-2 lg:order-1 flex justify-center opacity-75 hover:opacity-100 transition-opacity duration-300">
-          <LeftPanel />
-        </div>
+      {/* ── Right panel (absolute, no flow impact) ── */}
+      <div className="absolute right-2 sm:right-6 lg:right-10 bottom-[12%] sm:bottom-[18%] opacity-60 sm:opacity-70 hover:opacity-100 transition-opacity duration-300">
+        <RightPanel />
+      </div>
 
-        {/* Center content */}
-        <motion.div
+      {/* ── Center content — always perfectly centered ── */}
+      <motion.div
           variants={container}
           initial="hidden"
           animate="visible"
-          className="order-1 lg:order-2 flex-shrink-0 w-full max-w-lg text-center"
+          className="relative z-10 w-full max-w-2xl mx-auto text-center"
         >
           <motion.div variants={item} className="flex justify-center mb-6 sm:mb-8">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium border border-indigo-500/30 bg-indigo-500/10 dark:text-indigo-400 text-indigo-600">
@@ -316,7 +318,7 @@ export function Hero() {
             className="flex items-center justify-center gap-4 mt-8"
           >
             <a
-              href="https://github.com/Arnolds1809"
+              href="https://github.com/Arnolds18"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 flex items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-800 text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-150"
@@ -341,13 +343,7 @@ export function Hero() {
               <Mail size={16} />
             </a>
           </motion.div>
-        </motion.div>
-
-        {/* Right panel */}
-        <div className="order-3 flex justify-center opacity-75 hover:opacity-100 transition-opacity duration-300">
-          <RightPanel />
-        </div>
-      </div>
+      </motion.div>
 
       {/* Scroll indicator */}
       <motion.button

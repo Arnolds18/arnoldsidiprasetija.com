@@ -23,7 +23,7 @@ const links = [
     icon: Github,
     label: 'GitHub',
     value: 'github.com',
-    href: 'https://github.com/Arnolds1809',
+    href: 'https://github.com/Arnolds18',
     description: "See what I'm building",
   },
   {
